@@ -22,3 +22,13 @@ SpringBoot Rating Microservices Continuum Workshop
 ```
 java -jar build/libs/workshop-sb-rating-microservice-0.0.1.jar
 ```
+
+## Recursos
+
+### Buscar ratings por nombre
+
+    curl -v http://localhost:8082/api/v1/rating?name=nintendo
+    
+    status:
+            200: [] // Array de ratings
+            404: Not Found
